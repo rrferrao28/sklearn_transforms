@@ -23,7 +23,6 @@ class DropColumns(BaseEstimator, TransformerMixin):
 
 
 
-!pip install imbalanced-learn==0.4.3 
 
 class Balanceamento(BaseEstimator, TransformerMixin):
         def __init__(self, X, y):
