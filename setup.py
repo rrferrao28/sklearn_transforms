@@ -1,4 +1,3 @@
-!pip install imbalanced-learn==0.4.3 
 from sklearn.linear_model import LogisticRegressionCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import ExtraTreesClassifier
