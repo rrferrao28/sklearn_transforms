@@ -1,9 +1,3 @@
-from sklearn.linear_model import LogisticRegressionCV
-from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.ensemble import BaggingClassifier, RandomForestClassifier, AdaBoostClassifier
-from sklearn.feature_selection import RFECV
-from sklearn.metrics import classification_report
 from setuptools import setup
 
 
@@ -21,5 +15,8 @@ setup(
       packages=[
             'my_custom_sklearn_transforms'
       ],
-      zip_safe=False
+      zip_safe=False,
+      install_requires=[
+            'imbalanced-learn==0.4.2',
+      ],
 )
