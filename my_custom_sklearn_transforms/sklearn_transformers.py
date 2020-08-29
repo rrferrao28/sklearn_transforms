@@ -1,10 +1,8 @@
-from sklearn.linear_model import LogisticRegressionCV
-from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.ensemble import BaggingClassifier, RandomForestClassifier, AdaBoostClassifier
-from sklearn.feature_selection import RFECV
-from sklearn.metrics import classification_report
+  
 from sklearn.base import BaseEstimator, TransformerMixin
+import imblearn
+from imblearn.over_sampling import SMOTE
+import pandas as pd
 
 
 # All sklearn Transforms must have the `transform` and `fit` methods
